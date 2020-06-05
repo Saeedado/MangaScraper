@@ -7,15 +7,15 @@ import os
 #number of chapters
 no_of_chaps = 100
 #number of pages in chapter
-no_of_pages = 50
+max_no_of_pages = 50
 #manga that you want to get
-manga_name = "naruto"
+manga_name = "kimetsu-no-yaiba"
 
 
 for i in range(no_of_chaps):
 	index = i+1
 
-	folder_name = "chapter" + str(i)
+	folder_name = "chapter" + str(index)
 	 
 	try:
 	    # Create a new folder
@@ -25,7 +25,7 @@ for i in range(no_of_chaps):
 	    print("Directory " , folder_name ,  " already exists")
 
 	#incrementing through the manga uri    
-	for x in range(no_of_pages):
+	for x in range(max_no_of_pages):
 		if x <1:
 			chap_page =1
 			url = 'http://www.mangapanda.com/' + manga_name + '/' + str(index)
