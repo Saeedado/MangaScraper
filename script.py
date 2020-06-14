@@ -16,7 +16,7 @@ no_of_chaps = 100
 #number of pages in chapter
 max_no_of_pages = 60
 #manga that you want to get
-manga_name = "shokugeki-no-soma"
+manga_name = "kimetsu-no-yaiba"
 
 manga_folder = root_folder + '/' + manga_name
 
